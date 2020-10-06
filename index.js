@@ -6,6 +6,7 @@ app.get('/', (req, res) => {
     let dataToSend;
     // spawn new child process to call the python script
     const python = spawn('python', ['bot.py']);
+    console.log("running python");
     res.send("Bot activated");
 })
 
