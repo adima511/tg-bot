@@ -1,12 +1,11 @@
 const express = require('express')
-const {spawn} = require('child_process');
-const app = express();
-let port = process.env.PORT || 5000;
+var PythonShell = require('python-shell');
+const app = express()
+const port = process.env.PORT | 5000
 app.get('/', (req, res) => {
-    let dataToSend;
+ 
+    PythonShell.run('bot.py')
     // spawn new child process to call the python script
-    const python = spawn('python', ['bot.py']);
-    console.log(python);
     res.send("Bot activated");
 })
 
