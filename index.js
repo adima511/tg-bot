@@ -4,10 +4,7 @@ const app = express()
 var port = process.env.PORT || 5000;
 app.get('/', (req, res) => {
  
-    PythonShell.run('bot.py', function (err) {
-        if (err) throw err;
-        console.log('Running python file');
-    });
+    PythonShell.run('bot.py');
     // spawn new child process to call the python script
     res.send("Bot activated");
 })
