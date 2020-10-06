@@ -3,10 +3,6 @@ from aiogram import Bot, Dispatcher, executor, types
 from aiogram.dispatcher import FSMContext
 from aiogram.dispatcher.filters.state import State, StatesGroup
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
-import requests
-
-
-r = requests.put('https://bot-test-pbunqd.herokuapp.com/', data = {'key':'value'})
 
 #token = '1263605143:AAFZS7qm0x_4NS_6C8Plu-nMnEIjm5Uc7Fw'
 class BotStates(StatesGroup):
