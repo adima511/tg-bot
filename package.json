@@ -1,15 +1,16 @@
 {
-    "name": "http-server",
-    "version": "0.0.2",
-    "description": "A basic HTTP server example app",
-    "main": "index.js",
-    "scripts": {
-      "start": "node index.js"
-    },
-    "dependencies": {
-      "express": "^4.17.1"
-    },
-    "engines": {
-      "node": "10"
-    }
+  "name": "http-server",
+  "version": "0.0.2",
+  "description": "A basic HTTP server example app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "python-shell": "^2.0.2"
+  },
+  "engines": {
+    "node": "10"
+  }
 }
